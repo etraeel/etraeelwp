@@ -1,0 +1,45 @@
+.messages_items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    .messages_item{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid rgba(0,0,0,0.1);
+        margin-bottom: 8px;
+        .messages_item_description{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            i{
+                font-size: 1.8rem;
+                color: #01210a;
+            }
+
+            span:nth-child(4){
+                font-size: 1rem;
+                color: #444444;
+                margin-right: 20px;
+                font-weight: 500;
+            }
+            span:nth-child(3) ,span:nth-child(2) {
+                font-size: .9rem;
+                color: #757575;
+                margin-right: 10px;
+            }
+        }
+
+        .messages_item_options{
+            display: flex;
+            justify-content: space-around;
+
+        }
+    }
+    .seened{
+        background-color: #efefef;
+    }
+}

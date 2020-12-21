@@ -1,0 +1,259 @@
+.compare {
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 10;
+
+    .head {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+        h4 {
+            color: #484848;
+            border-bottom: 1px solid #00c0ef;
+            width: auto;
+            margin: 0;
+            padding: 10px;
+        }
+
+    }
+
+    .body {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .items {
+            display: flex;
+            width: 100%;
+            position: sticky !important;
+            top: 0px !important;
+
+            .item {
+                background-color: white;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+
+                img {
+                    width: 80px;
+                    height: 80px;
+
+                }
+
+                a {
+                    margin-top: 15px;
+
+                    .name {
+                        font-size: .9rem;
+                        color: #4e555b;
+                        margin-top: 5px;
+                    }
+                }
+
+                .description {
+                    font-size: .7rem;
+                    color: #838a91;
+                    margin-top: 10px;
+                }
+                .compare_price{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: #23272b;
+                    margin-top: 15px;
+                }
+
+                .add_to_cart {
+                    font-size: .6rem;
+                    color: #ffffff;
+                    background-color: #ef394e;
+                    padding: 5px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .attributes {
+            margin-top: 20px;
+
+            .attributes_item {
+                display: flex;
+                flex-direction: column;
+
+                .title {
+                    background-color: #e8ecee;
+                    width: 99%;
+                    padding: 8px;
+
+                    span {
+                        font-size: 1rem;
+                        color: #4e555b;
+                        margin-right: 10px;
+                        align-items: center;
+                        font-family: Yekan;
+                    }
+                }
+
+                .values {
+                    display: flex;
+                    width: 100%;
+                    background-color: white;
+                    margin-bottom: 5px;
+
+                    .value {
+                        display: flex;
+                        font-size: .9rem;
+                        width: 100%;
+                        color: #4e555b;
+                        padding: 5px;
+                        justify-content: center;
+                        align-items: center;
+                        border-left: 1px solid rgba(0, 0, 0, 0.1);
+                        line-height: 2.2rem;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* //////////////////////////////////MediaQuery/////////////////////////////////// */
+@media only screen and (min-width: 410px) {
+    .compare {
+        margin-top: 70px !important;
+        padding: 20px !important;
+        .body {
+            .items {
+
+                .item {
+
+                    img {
+                        width: 100px !important;
+                        height: 100px !important;
+                    }
+
+                    a {
+
+                        .name {
+                            font-size: 1rem !important;
+                        }
+                    }
+                    .description {
+                        font-size: .7rem !important;
+                    }
+                    .compare_price{
+                        font-size: 1.2rem !important;
+                    }
+
+                    .add_to_cart {
+                        font-size: .7rem !important;
+                        padding: 5px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 780px) {
+
+    .compare {
+        margin-top: 70px !important;
+        padding: 40px !important;
+        .body {
+            .items {
+                top: 120px !important;
+                .item {
+
+                    img {
+                        width: 120px !important;
+                        height: 120px !important;
+                    }
+
+                    a {
+
+                        .name {
+                            font-size: 1.2rem !important;
+                        }
+                    }
+                    .description {
+                        font-size: 1rem !important;
+                    }
+                    .compare_price{
+                        font-size: 1.5rem !important;
+                    }
+
+                    .add_to_cart {
+                        font-size: .8rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 980px) {
+
+    .compare {
+        .head{
+            h4{
+                font-size: 1.5rem;
+            }
+        }
+        .body {
+            .items {
+                .item {
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+                    a {
+                        .name {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .description {
+                        font-size: 1rem;
+                    }
+
+                    .add_to_cart {
+                        font-size: 1rem;
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .attributes {
+                margin-top: 20px;
+
+                .attributes_item {
+                    .title {
+                        padding: 12px;
+                        span {
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                    .values {
+                        .value {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

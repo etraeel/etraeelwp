@@ -1,0 +1,16 @@
+/*!
+ * 
+ * Bootstrap 4+ Persian Date Time Picker jQuery Plugin
+ * https://github.com/Mds92/MD.BootstrapPersianDateTimePicker
+ * version : 3.9.2
+ * Written By Mohammad Dayyan, Mordad 1397 - 1399
+ * mds.soft@gmail.com - @mdssoft
+ * 
+ *       
+ */
+
+/*!
+ * AdminLTE v3.0.0-alpha.2 (https://adminlte.io)
+ * Copyright 2014-2018 Abdullah Almsaeed <abdullah@almsaeedstudio.com>
+ * Licensed under MIT (https://github.com/almasaeed2010/AdminLTE/blob/master/LICENSE)
+ */

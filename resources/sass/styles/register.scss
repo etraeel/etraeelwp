@@ -1,0 +1,42 @@
+.register{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+
+    .head{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 20px;
+        h3{
+            padding: 10px 20px;
+            text-align: center;
+            line-height: 2rem;
+        }
+    }
+    .body {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        border-radius: 4px;
+        justify-items: center;
+
+        span{
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #373737;
+        };
+        form {
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-items: center;
+            grid-gap: 10px;
+
+        }
+    }
+}

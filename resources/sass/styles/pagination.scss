@@ -1,0 +1,51 @@
+.pagination{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+
+    .page-item{
+        padding: 3px;
+        margin-right: 5px;
+        cursor: pointer;
+        span{
+            font-size:1.5rem;
+            padding: 5px 10px;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        a{
+            font-size:1.5rem;
+            color: #4e555b;
+            padding: 5px 10px;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+
+    }
+    .disabled{
+        color: #4e555b;
+    }
+    .active{
+        color: red;
+    }
+}
+
+@media screen and ( max-width: 550px ){
+
+
+    .pagination{
+        .page-item{
+            padding: 1px;
+            margin-right: 5px;
+            span{
+                font-size:1.1rem;
+                padding: 2px 5px;
+            }
+            a{
+                font-size:1.1rem;
+                padding: 2px 5px;
+            }
+        }
+    }
+}

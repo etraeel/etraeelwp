@@ -1,0 +1,36 @@
+.questions{
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 10;
+
+    .head{
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        h1 {
+            color: #484848;
+            border-bottom: 1px solid #00c0ef;
+            width: auto;
+            margin: 0;
+            padding: 10px;
+        }
+
+    }
+
+    .body{
+        margin-top: 20px;
+        span{
+            font-size: 1.3rem;
+            color: #4e555b;
+            line-height: 2;
+            text-justify: auto;
+        }
+
+    }
+}

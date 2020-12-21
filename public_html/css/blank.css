@@ -1,0 +1,30 @@
+.container section {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#5151fc, #ffb9b9);
+}
+
+.login {
+  background-color: #004c99;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.login .body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.login .body form {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.login .body form input {
+  width: 300px;
+  border-radius: 4px;
+  border-style: none;
+}
+

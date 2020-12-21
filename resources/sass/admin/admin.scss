@@ -1,0 +1,21 @@
+.dragElem{
+    opacity: .5;
+}
+
+.img_box{
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    &:hover{
+        cursor: move;
+    }
+}
+
+.over{
+    border: 2px solid #0fabc6;
+}
+
+.popover {
+    max-width: none !important;
+}

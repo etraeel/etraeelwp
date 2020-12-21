@@ -1,0 +1,152 @@
+
+.cartAddress {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-top: 70px;
+    z-index: 10;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+            h1 {
+                color: #484848;
+                font-size: 1.3rem;
+                border-bottom: 2px solid #ff4b5c;
+                width: auto;
+                margin: 0;
+                padding: 11px;
+                font-weight: 500;
+            }
+        }
+
+        .body {
+            margin-top: 20px;
+
+            h2{
+                font-size: 1.2rem;
+            }
+
+            .Address_section{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .address_item_parent{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .address_item{
+                        display: flex;
+                        margin-bottom: 20px;
+                        border: 2px solid rgba(0,0,0,0.1);
+                        padding: 15px;
+                        border-radius: 4px;
+                        width: 100%;
+                        >span{
+                            font-size: 1.2rem ;
+                            color: #444444;
+                            line-height: 2.5rem;
+                        }
+                        &:hover{
+                            border: 2px solid rgba(0,0,0,0.3);
+                            cursor: pointer;
+                        }
+                    }
+
+                    .select_address{
+                        border: 2px solid rgba(7, 51, 227, 0.6);
+
+                    }
+                }
+
+
+                .add_address {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid rgba(0,0,0,0.1);
+                    padding: 15px;
+                    border-radius: 4px;
+                    h2{
+                        color: #4c110f;
+                        display: inline-block;
+                    }
+
+                }
+
+                form{
+                    .add_address_item {
+                        padding: 15px;
+
+                        .add_address_item_title {
+                            display: flex;
+                            font-size: 1.2rem;
+                            color: #444444;
+                            min-width: 250px;
+                            align-items: center;
+                            justify-items: center;
+                            margin-bottom: 10px;
+                        }
+
+                        input {
+                            border-radius: 3px;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                            font-size: 1.2rem;
+                            font-family: IRANSans;
+                            padding: 10px;
+                        }
+
+                        textarea {
+                            border-radius: 3px;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                            font-size: 1.2rem;
+                            font-family: IRANSans;
+                            padding: 10px;
+                            width: 100%;
+                        }
+
+                        .select2-selection__rendered {
+                            line-height: 31px !important;
+                        }
+
+                        .select2-container .select2-selection--single {
+                            height: 35px !important;
+                        }
+
+                        .select2-selection__arrow {
+                            height: 34px !important;
+                        }
+
+
+                    }
+                }
+                .add_address_btn {
+                    width: fit-content;
+                    margin-top: 20px;
+                    align-items: center;
+                    justify-items: center;
+                    padding: 15px 20px;
+                }
+            }
+        }
+    }
+
+
+
+/* //////////////////////////////////MediaQuery/////////////////////////////////// */
+
+@media only screen and (min-width: 900px) {
+
+
+}
+
+@media only screen and (min-width: 1180px) {
+
+}

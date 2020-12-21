@@ -1,0 +1,955 @@
+
+.cart {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-gap: 30px;
+    max-width: 1500px;
+    grid-template-columns: auto;
+    margin-top: 40px;
+    z-index: 10;
+
+    .cart_list {
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+
+        .head {
+            display: flex;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+            h1 {
+                color: #484848;
+                font-size: 1.1rem;
+                border-bottom: 2px solid #ff4b5c;
+                width: auto;
+                margin: 0;
+                padding: 11px;
+                font-weight: 500;
+
+                span {
+                    font-size: .9rem;
+                    background-color: #ff4b5c;
+                    color: white;
+                    padding: 0 5px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .body {
+            margin-top: 20px;
+
+            .items {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    width: 95%;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                    padding: 5px;
+                    margin-bottom: 20px;
+                    align-items: center;
+
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 5px;
+                    }
+
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+                        width: 99%;
+                        height: 100%;
+                        padding: 10px;
+                        align-items: center;
+
+                        .name {
+                            font-size: 1.1rem;
+                            color: #4e555b;
+                        }
+
+                        .attributes {
+                            margin-top: 8px;
+
+                            span {
+                                font-size: 1rem;
+                                color: #7b8288;
+                            }
+                        }
+
+                        .price_off {
+                            display: flex;
+                            color: red;
+                            font-size: .9rem;
+                            justify-content: flex-start;
+                            margin-top: 15px;
+
+                            span {
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .control {
+                            display: flex;
+                            margin-top: 5px;
+                            width: 100%;
+                            height: 100%;
+                            align-items: center;
+                            justify-content: center;
+
+                            .inventory {
+                                display: flex;
+                                align-items: center;
+                                margin-left: 10px;
+
+                                span {
+                                    font-size: 1rem;
+                                    color: #7b8288;
+                                }
+
+
+                                .box select {
+                                    color: #000000;
+                                    padding: 1px;
+                                    border: none;
+                                    font-size: 1rem;
+                                    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.2);
+                                    -webkit-appearance: button;
+                                    outline: none;
+                                    background-color: #e4e4e4;
+                                    border-radius: 5px;
+                                    font-family: IRANSans;
+                                }
+
+                                .box::before {
+                                    content: "\f13a";
+                                    font-family: IRANSans;
+                                    text-align: center;
+                                    font-size: 1rem;
+                                    line-height: 45px;
+                                    color: rgba(255, 255, 255, 0.5);
+                                    pointer-events: none;
+
+                                }
+
+                                .box:hover::before {
+                                    color: rgba(255, 255, 255, 0.6);
+                                    background-color: rgba(255, 255, 255, 0.2);
+                                }
+
+                                .box select option {
+                                    padding: 30px;
+                                }
+
+                                ////////////////
+                                .pricesBox select {
+                                    color: #000000;
+                                    padding: 1px;
+                                    border: none;
+                                    font-size: 1rem;
+                                    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.2);
+                                    -webkit-appearance: button;
+                                    outline: none;
+                                    background-color: #e4e4e4;
+                                    border-radius: 5px;
+                                    font-family: IRANSans;
+                                }
+
+                                .pricesBox::before {
+                                    content: "\f13a";
+                                    font-family: IRANSans;
+                                    text-align: center;
+                                    font-size: 1rem;
+                                    line-height: 45px;
+                                    color: rgba(255, 255, 255, 0.5);
+                                    pointer-events: none;
+
+                                }
+
+                                .pricesBox:hover::before {
+                                    color: rgba(255, 255, 255, 0.6);
+                                    background-color: rgba(255, 255, 255, 0.2);
+                                }
+
+                                .pricesBox select option {
+                                    padding: 30px;
+                                }
+
+                            }
+
+                            .delete {
+                                cursor: pointer;
+                                margin-right: 25px;
+
+                                i {
+                                    font-size: .8rem;
+                                    color: #7b8288;
+                                }
+
+                                span {
+                                    font-size: .8rem;
+                                    color: #7b8288;
+                                }
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+
+
+                        }
+
+                        .price {
+                            display: flex;
+                            color: #414141;
+                            font-size: 1.2rem;
+                            justify-content: flex-start;
+                            font-weight: 500;
+                            margin-top: 5px;
+
+                            span {
+                                margin-right: 5px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .cart_factor {
+        height: fit-content;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+
+        .head {
+            display: flex;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+            h1 {
+                color: #484848;
+                font-size: 1.1rem;
+                border-bottom: 2px solid #ff4b5c;
+                width: auto;
+                margin: 0;
+                padding: 11px;
+                font-weight: 500;
+
+            }
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+
+                span {
+                    font-size: .9rem;
+                    color: #4e555b;
+                    font-family: Yekan;
+                    font-weight: 400;
+                }
+            }
+
+
+            .price_transport {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            }
+
+            .discount_section {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                margin-top: 30px;
+                width: 250px;
+                align-self: center;
+
+                span {
+                    font-size: .9rem;
+                    color: red;
+                    width: 85px;
+                }
+
+                input {
+                    margin: 0;
+                    padding: 7px !important;
+                    min-width: 60px !important;
+                }
+
+                div {
+                    max-width: fit-content;
+                    font-size: .8rem;
+                    margin-right: 5px;
+                    padding: 8px !important;
+                }
+            }
+
+            #discount_status {
+                color: #1f6fb2;
+                font-size: .9rem;
+                padding: 20px;
+                font-weight: 600;
+            }
+
+            .price_total {
+                span {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    color: #3f4143;
+                }
+            }
+
+            .price_off {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+                span {
+                    color: #ff4b5c;
+                }
+            }
+
+            .price_pay {
+                span {
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    color: #3f4143;
+                }
+            }
+
+            .continue_pay {
+                margin: 20px auto;
+                width: 115px;
+                background-color: #ff4b5c;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: #fa1a2f;
+                }
+            }
+
+            .margin_currency {
+                margin-right: 4px;
+            }
+
+        }
+    }
+
+
+}
+
+.empty_cart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    z-index: 100;
+
+    .head {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+        h1 {
+            color: #484848;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #ff4b5c;
+            width: auto;
+            margin: 0;
+            padding: 11px;
+            font-weight: 500;
+
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 250px;
+            height: 200px;
+        }
+
+        span {
+            font-size: 1.5rem;
+            color: #4e555b;
+            font-family: Yekan;
+        }
+    }
+
+}
+
+/* //////////////////////////////////MediaQuery/////////////////////////////////// */
+@media only screen and (min-width: 412px) {
+    .cart {
+
+        .cart_list {
+            .head {
+                h1 {
+                    span {
+                    }
+                }
+            }
+
+            .body {
+
+                .items {
+
+                    .item {
+                        img {
+                        }
+                        .details {
+                            .name {
+                                font-size: 1.1rem;
+                            }
+                            .attributes {
+                                span {
+                                    font-size: 1rem;
+                                }
+                            }
+
+                            .price_off {
+                                font-size: 1rem;
+                                span {
+
+                                }
+                            }
+
+                            .control {
+                                .inventory {
+                                    span {
+                                    }
+
+                                    .box {
+
+                                    }
+
+                                    .box select {
+                                    }
+
+                                    .box::before {
+
+                                    }
+
+                                    .box:hover::before {
+
+                                    }
+
+                                    .box select option {
+                                    }
+
+                                }
+
+                                .delete {
+
+                                    i {
+                                        font-size: .9rem;
+                                    }
+
+                                    span {
+                                        font-size: .9rem;
+                                    }
+                                }
+
+
+                            }
+
+                            .price {
+                                font-size: 1.2rem;
+                                span {
+                                    margin-right: 5px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .cart_factor {
+            .head {
+
+                h1 {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .body {
+
+                div {
+
+                    span {
+                        font-size: 1rem;
+
+                    }
+                }
+
+                .price_transport {
+
+                }
+
+                .discount_section {
+                    width: 280px;
+                    span {
+                        font-size: 1rem;
+                    }
+                    input {
+                    }
+
+                    div {
+                        font-size: .9rem;
+                    }
+                }
+
+                #discount_status {
+                }
+
+                .price_total {
+                    span {
+                        font-size: 1.1rem;
+                    }
+                }
+                .price_pay {
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .continue_pay {
+                }
+
+                .margin_currency {
+                }
+
+            }
+        }
+    }
+
+    .empty_cart {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 80%;
+        height: 80%;
+        z-index: 100;
+
+        .head {
+            display: flex;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+            h1 {
+                color: #484848;
+                font-size: 1.3rem;
+                border-bottom: 2px solid #ff4b5c;
+                width: auto;
+                margin: 0;
+                padding: 11px;
+                font-weight: 500;
+
+            }
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 250px;
+                height: 200px;
+            }
+
+            span {
+                font-size: 1.5rem;
+                color: #4e555b;
+                font-family: Yekan;
+            }
+        }
+
+    }
+}
+@media only screen and (min-width: 780px) {
+
+    .cart {
+
+        .cart_list {
+            .head {
+                h1 {
+                    font-size: 1.3rem;
+                    span {
+                    }
+                }
+            }
+
+            .body {
+
+                .items {
+
+                    .item {
+                        flex-direction: row !important;
+                        img {
+                            width: 130px;
+                            height: 130px;
+                        }
+                        .details {
+                            .name {
+                                width: 100%;
+                                font-size: 1.1rem;
+                            }
+                            .attributes {
+                                width: 100%;
+                                span {
+                                    font-size: 1rem;
+                                }
+                            }
+
+                            .price_off {
+                                font-size: 1rem;
+                                width: 100%;
+                                justify-content: flex-end;
+                                span {
+
+                                }
+                            }
+
+                            .control {
+                                width: 100%;
+                                margin-top: -10px;
+                                justify-content: flex-start;
+                                .inventory {
+                                    margin-right: 15px;
+                                    span {
+                                    }
+
+                                    .box {
+
+                                    }
+
+                                    .box select {
+                                    }
+
+                                    .box::before {
+
+                                    }
+
+                                    .box:hover::before {
+
+                                    }
+
+                                    .box select option {
+                                    }
+
+                                }
+
+                                .delete {
+
+                                    i {
+                                        font-size: 1rem;
+                                    }
+
+                                    span {
+                                        font-size: 1rem;
+                                    }
+                                }
+
+
+                            }
+
+                            .price {
+                                margin-top: -10px;
+                                width: 100%;
+                                justify-content: flex-end;
+                                font-size: 1.2rem;
+                                span {
+                                    margin-right: 5px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .cart_factor {
+            .head {
+
+                h1 {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .body {
+
+                div {
+
+                    span {
+                        font-size: 1.3rem;
+
+                    }
+                }
+
+                .price_transport {
+
+                }
+
+                .discount_section {
+                    width: 340px;
+                    span {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                    }
+
+                    div {
+                        font-size: 1rem;
+                    }
+                }
+
+                #discount_status {
+                }
+
+                .price_total {
+                    span {
+                        font-size: 1.3rem;
+                    }
+                }
+                .price_pay {
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .continue_pay {
+                    width: 190px;
+                }
+
+                .margin_currency {
+                }
+
+            }
+        }
+    }
+
+    .empty_cart {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 80%;
+        height: 80%;
+        z-index: 100;
+
+        .head {
+            display: flex;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+            h1 {
+                color: #484848;
+                font-size: 1.3rem;
+                border-bottom: 2px solid #ff4b5c;
+                width: auto;
+                margin: 0;
+                padding: 11px;
+                font-weight: 500;
+
+            }
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 250px;
+                height: 200px;
+            }
+
+            span {
+                font-size: 1.5rem;
+                color: #4e555b;
+                font-family: Yekan;
+            }
+        }
+
+    }
+
+}
+@media only screen and (min-width: 1180px) {
+
+    .cart {
+        grid-template-columns: 3fr 2fr;
+        .cart_list {
+            .head {
+                h1 {
+                    font-size: 1.3rem;
+                    span {
+                    }
+                }
+            }
+
+            .body {
+
+                .items {
+
+                    .item {
+                        flex-direction: row !important;
+                        img {
+                            width: 130px;
+                            height: 130px;
+                        }
+                        .details {
+                            .name {
+                                font-size: 1.3rem;
+                            }
+                            .attributes {
+                                span {
+                                    font-size: 1.1rem;
+                                }
+                            }
+
+                            .price_off {
+                                font-size: 1.1rem;
+                                font-weight: 500;
+                            }
+
+                            .control {
+                                .inventory
+                                {
+                                    span {
+                                    }
+
+                                    .box {
+
+                                    }
+
+                                    .box select {
+                                    }
+
+                                    .box::before {
+
+                                    }
+
+                                    .box:hover::before {
+
+                                    }
+
+                                    .box select option {
+                                    }
+
+                                }
+
+                                .delete {
+
+                                    i {
+                                        font-size: 1.1rem;
+                                    }
+
+                                    span {
+                                        font-size: 1.1rem;
+                                    }
+                                }
+
+
+                            }
+
+                            .price {
+                                font-size: 1.4rem;
+                                font-weight: 500;
+                                span {
+                                    margin-right: 5px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .cart_factor {
+            .head {
+
+                h1 {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .body {
+
+                div {
+
+                    span {
+                        font-size: 1.3rem;
+
+                    }
+                }
+
+                .price_transport {
+
+                }
+
+                .discount_section {
+                    width: 340px;
+                    span {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                    }
+
+                    div {
+                        font-size: 1rem;
+                    }
+                }
+
+                #discount_status {
+                }
+
+                .price_total {
+                    span {
+                        font-size: 1.3rem;
+                    }
+                }
+                .price_pay {
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .continue_pay {
+                    width: 190px;
+                }
+
+                .margin_currency {
+                }
+
+            }
+        }
+    }
+}

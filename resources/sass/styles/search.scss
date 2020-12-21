@@ -1,0 +1,50 @@
+.search_body{
+    display: flex;
+    flex-direction: column;
+.search_item{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    .search_description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 20px;
+        a {
+            .search_description_name {
+                font-size: 1.3rem;
+                color: #444444;
+                font-weight: 500;
+            }
+        }
+
+        .search_description_cat {
+            font-size: 1rem;
+            color: #23272b;
+        }
+
+        .search_description_descript {
+            font-size: .9rem;
+            color: #4e555b;
+        }
+    }
+}
+    .no_item{
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        background-color: #fff9bd;
+        width: 100%;
+        padding: 20px 0;
+        justify-content: center;
+        font-size: 1.3rem;
+
+    }
+}

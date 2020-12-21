@@ -1,0 +1,27 @@
+.index_items{
+   &:first-child{
+       margin-top: 20px;
+   }
+    &:last-child{
+        margin-bottom: 20px;
+    }
+
+    .index_item{
+        padding: 15px 20px;
+        .index_item_title{
+            font-size: 1.1rem;
+            color: #444444;
+            font-weight: 500;
+        }
+        .index_item_value{
+            font-size: 1.1rem;
+            color: #727171;
+            font-weight: 500;
+        }
+        .index_item_value.value_red{
+            color: #e74c3c;
+        }
+
+    }
+
+}
